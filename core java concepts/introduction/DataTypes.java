@@ -1,4 +1,4 @@
-public class data_types {
+public class DataTypes {
     public static void main(String args[]){
         // Data types in java
         // Java is a strongly typed language, that means every variables need to have a type, and automatic type conversion does not happen in java.
@@ -11,6 +11,7 @@ public class data_types {
         byte a = 127;
         short b = 32767;
         int c = 2147483647;
+        long d = 1999999999999999999l; // we have to append l or L at the end of long. Only then it will be long literal
         long days,seconds,distance;
         int lightspeed; 
 
@@ -23,7 +24,7 @@ public class data_types {
         // NOTE - to perform arithmatic operation the values should be of same data type
         // d = a * b * c will give incorrect answer.
 
-        System.out.println("byte range = "+a+"\nshort range = "+b+"\nint range = "+c);
+        System.out.println("byte range = "+a+"\nshort range = "+b+"\nint range = "+c+"\n long can be longer = "+d);
         System.out.println("Light will travel about "+distance+" miles in "+days+" days.\n");
 
         // ---------------------------------------------------------------------------------------------------------
@@ -31,6 +32,8 @@ public class data_types {
         System.out.println("--FLOAT & DOUBLES--");
 
         // float specifies a single precision value that uses 32 bit storage
+        float num = 10.8f; // we need to append f or F at the end of value for float literals.
+        System.out.println("floating point number = "+num);
         float rupee, paisa;
         paisa = 48246;
         rupee = paisa / 100;
@@ -95,5 +98,7 @@ public class data_types {
         }
 
         System.out.println("10>11 is: "+(10>11)); //it will return false
+
+        
     }
 }

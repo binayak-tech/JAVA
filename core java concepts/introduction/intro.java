@@ -3,12 +3,21 @@
 */
 
 // class syntax = class class_name {}
-class intro{
+class Intro{
 
     /* main method dclaration = public - access control (public/private) main method must be public, 
     static - to initialize method statically and run by default without call, void - no retutn value (return type),
     main - function name, String - type of parameter, args - passed parameters, [] array of parameters passed
     */
+    /*
+    we can write main method in many wasy -- 
+        public static void main(String[] args)  
+        public static void main(String []args)  
+        public static void main(String args[])  
+        public static void main(String... args)  
+        static public void main(String[] args)  
+        public static final void main(String[] args)  
+     */
     public static void main(String args[]) {
 
         // syntax for printing data or showing output on screen, 
@@ -18,7 +27,7 @@ class intro{
 
         // VARIABLES AND DATA TYPES
          
-        // syntax = data_type variable_name;
+        // syntax = data_type variable_name = value;
         int age; // dclaration
         age = 24; // intialization
         boolean can_watch = false;
