@@ -6,10 +6,13 @@ public class InputOutput {
         // to write any string we use "" double quotation and to append any variable we use + 
 
         System.out.println("This is println method which appends a new line after the output");
-        System.out.print("This is print method which print everythin on same line");
-
+        System.out.print("This is print method which print everythin on same line\n");
+       
         int num = 1998;
-        System.out.println("\nValue of num is: "+num);
+        System.out.printf("The value of the num = %d.",num);
+        System.out.format("\nThe value of the num = %d.",num); 
+        // both printf and format method works the same way. They dont leave any new line behind.
+        // and they use format specifiers such as %d, %f, %s for int, float and string respectively.
 
 
         try (
