@@ -25,5 +25,18 @@ public class switchCase {
                 default: System.out.println("Invalid Number");
             }
         }
+
+        // another way to use switch-case
+
+        String var = "Saurabh";
+        switch (var) {
+            case "Shubham" -> {
+                System.out.println("You are going to become an Adult!");
+                System.out.println("You are 17 years old!");
+            }
+            case "Saurabh" -> System.out.println("You are going to join a Job!");
+            case "Vishaka" -> System.out.println("You are going to get retired!");
+            default -> System.out.println("Enjoy Your life!");
+        }
     }
 }
