@@ -13,21 +13,25 @@ public class MethodsOrFunctions {
             System.out.print("\nSecond Number: ");
             int b = sc.nextInt();
 
+            // class object creation
+            MethodsOrFunctions obj1 = new MethodsOrFunctions();
+
             if(op == '/'){
                 double x = (double) a;
                 double y = (double) b;
-                System.out.printf("\n%d %c %d = %.2f",a,op,b,divideOp(x,y));
+                System.out.printf("\n%d %c %d = %.2f", a, op, b, divideOp(x,y));
             }
             else{
-                System.out.printf("\n%d %c %d = %d",a,op,b,calculate(a,b,op));
+                System.out.printf("\n%d %c %d = %d", a, op, b, (obj1.calculate(a,b,op)));
             }
         }
 
        
     }
 
+    // This method can only be called using an object of the class.
     // This method name is calculate and it is taking 3 attributes and returning a integer.
-    public static int calculate(int x, int y, char op){
+    int calculate(int x, int y, char op){
         int ans = 0;
         switch(op){
             case '+': ans = x + y;
@@ -43,7 +47,7 @@ public class MethodsOrFunctions {
         return ans;
     }
 
-    // This is another method called divideOp, it is taking 2 double inputs and returnig one double.
+    // This is a static method called divideOp, it is taking 2 double inputs and returnig one double.
    static double divideOp(double x, double y){
         return x / y;
     }
