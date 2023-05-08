@@ -6,9 +6,9 @@ package methods;
 import java.util.Scanner;
 public class Recursion {
 
-    public int factorial(int x){
-        if(x>=1){
-            return x * factorial(x-1);
+    public int factorial(int n){
+        if(n>=1){
+            return n * factorial(n-1);
         }
         else{
             return 1;
