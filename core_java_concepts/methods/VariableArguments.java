@@ -1,4 +1,4 @@
-package mehods;
+package methods;
 
 class VariableArguments{
 
